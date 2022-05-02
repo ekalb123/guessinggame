@@ -79,3 +79,9 @@ function checkGuess() {
   
     randomNumber = Math.floor(Math.random() * 100) + 1;
   }
+
+  $("input").on("keydown",function search(e) {
+    if(e.keyCode == 13) {
+        checkGuess();
+    }
+});
